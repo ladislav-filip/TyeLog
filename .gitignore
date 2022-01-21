@@ -1,0 +1,10 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+Tye/.logs/
+
+Tye/.tye/
+
+.vs/TyeLog/v17/.suo

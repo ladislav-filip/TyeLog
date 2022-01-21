@@ -1,0 +1,27 @@
+﻿name: PPS
+
+extensions:
+  - name: seq
+    logPath: ./.logs
+
+# define multiple services here
+services:
+  
+- name: WebNameDays
+  project: ../WebNameDays/WebNameDays.csproj
+  bindings:
+    - port: 8801
+      protocol: http
+  env:
+  - SERILOG_SEQ=serilog
+
+- name: ApiNameDays
+  project: ../ApiNameDays/ApiNameDays.csproj
+  bindings:
+    - port: 8802
+      protocol: http
+  env:
+  - SERILOG_SEQ=serilog
+        
+#- name: NameDayWorker
+#  project: ../NameDayWorker/NameDayWorker.csproj          
