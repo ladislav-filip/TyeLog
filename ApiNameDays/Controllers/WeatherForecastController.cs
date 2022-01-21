@@ -26,6 +26,7 @@ namespace ApiNameDays.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            throw new ArgumentException("Fail argument");
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
