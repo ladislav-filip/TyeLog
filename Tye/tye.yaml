@@ -15,13 +15,13 @@ services:
   env:
   - SERILOG_SEQ=serilog
 
-- name: ApiNameDays
-  project: ../ApiNameDays/ApiNameDays.csproj
-  bindings:
-    - port: 8802
-      protocol: http
-  env:
-  - SERILOG_SEQ=serilog
+#- name: ApiNameDays
+#  project: ../ApiNameDays/ApiNameDays.csproj
+#  bindings:
+#    - port: 8802
+#      protocol: http
+#  env:
+#  - SERILOG_SEQ=serilog
         
 #- name: NameDayWorker
 #  project: ../NameDayWorker/NameDayWorker.csproj          
